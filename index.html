@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pagination</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+        integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+    <style>
+        body
+        {
+            padding: 0;
+            margin: 3rem 25rem;
+        }
+        nav
+        {
+            margin: 2rem 0;
+        }
+        /* Style for all pagination */
+        .page-item a {
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            margin:0 .5rem;
+            padding: .5rem 1rem;
+            color: gray;
+        }
+        /* Style for 2nd pagination */
+        #pagination2 a
+        {
+            border: 2px solid rgb(0, 98, 255);
+            border-radius: 5px;
+            
+        }
+        /* Style for 3rd and 6th pagination */
+        #pagination3,#pagination6
+        {
+            border: 2px solid rgb(0, 98, 255);
+            border-radius: 5px;
+        }
+        /* Style for 5th pagination */
+        #pagination5 a
+        {
+            border: 2px solid gray;
+            border-radius: 5px;
+        }
+        /* Style for 6th pagination */
+        #pagination6 a
+        {
+            border-right: 2px solid rgb(0, 98, 255);
+            border-radius: 0;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <nav aria-label="...">
+        <ul class="pagination" id="pagination1" style="justify-content: center;">
+            <li class="page-item">
+                <a class="page-link"><i class="bi bi-arrow-left"></i>Previous</a>
+            </li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item" aria-current="page">
+                <a class="page-link" href="#">2</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#"><i class="bi bi-three-dots"></i></a></li>
+            <li class="page-item"><a class="page-link" href="#">17</a></li>
+            <li class="page-item"><a class="page-link" href="#">18</a></li>
+            <li class="page-item"><a class="page-link" href="#">19</a></li>
+            <li class="page-item"><a class="page-link" href="#">20</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#">Next<i class="bi bi-arrow-right"></i></a>
+            </li>
+        </ul>
+    </nav>
+    <nav aria-label="...">
+        <ul class="pagination" id="pagination2" style="justify-content: center;">
+            <li class="page-item">
+                <a class="page-link"><i class="bi bi-arrow-left"></i>Previous</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item" aria-current="page">
+                <a class="page-link" href="#">2</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item active"><a class="page-link" href="#">5</a></li>
+            <li class="page-item"><a class="page-link" href="#">6</a></li>
+            <li class="page-item"><a class="page-link" href="#">7</a></li>
+            <li class="page-item"><a class="page-link" href="#"><i class="bi bi-three-dots"></i></a></li>
+            <li class="page-item"><a class="page-link" href="#">20</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#">Next<i class="bi bi-arrow-right"></i></a>
+            </li>
+        </ul>
+    </nav>
+    <nav aria-label="...">
+        <ul class="pagination" id="pagination3" style="justify-content: center;">
+            <li class="page-item">
+                <a class="page-link"><i class="bi bi-arrow-left"></i>Previous</a>
+            </li>
+            <li class="page-item "><a class="page-link" href="#">1</a></li>
+            <li class="page-item active" aria-current="page">
+                <a class="page-link" href="#">2</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#"><i class="bi bi-three-dots"></i></a></li>
+            <li class="page-item"><a class="page-link" href="#">17</a></li>
+            <li class="page-item"><a class="page-link" href="#">18</a></li>
+            <li class="page-item"><a class="page-link" href="#">19</a></li>
+            <li class="page-item"><a class="page-link" href="#">20</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#">Next<i class="bi bi-arrow-right"></i></a>
+            </li>
+        </ul>
+    </nav>
+    <nav aria-label="...">
+        <ul class="pagination" id="pagination4" style="justify-content: center;">
+            <li class="page-item">
+                <a class="page-link" style="background-color: rgb(0, 98, 255);color: white;"><i class="bi bi-arrow-left"></i>Previous</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item" aria-current="page">
+                <a class="page-link" href="#">2</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item active"><a class="page-link" href="#">5</a></li>
+            <li class="page-item"><a class="page-link" href="#">6</a></li>
+            <li class="page-item"><a class="page-link" href="#">7</a></li>
+            <li class="page-item"><a class="page-link" href="#"><i class="bi bi-three-dots"></i></a></li>
+            <li class="page-item"><a class="page-link" href="#">20</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#" style="background-color: rgb(0, 98, 255);color: white;">Next<i class="bi bi-arrow-right"></i></a>
+            </li>
+        </ul>
+    </nav>
+    <nav aria-label="...">
+        <ul class="pagination" id="pagination5" style="justify-content: center;">
+            <li class="page-item">
+                <a class="page-link" style="background-color: rgb(0, 98, 255);color: white;border: none;"><i class="bi bi-arrow-left"></i>Previous</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item" aria-current="page">
+                <a class="page-link" href="#">2</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item active"><a class="page-link" href="#" style="border-color: rgb(0, 98, 255);">5</a></li>
+            <li class="page-item"><a class="page-link" href="#">6</a></li>
+            <li class="page-item"><a class="page-link" href="#">7</a></li>
+            <li class="page-item"><a class="page-link" href="#"><i class="bi bi-three-dots"></i></a></li>
+            <li class="page-item"><a class="page-link" href="#">20</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#" style="background-color: rgb(0, 98, 255);color: white;border: none;">Next<i class="bi bi-arrow-right"></i></a>
+            </li>
+        </ul>
+    </nav>
+    <nav aria-label="...">
+        <ul class="pagination" id="pagination6" style="justify-content: center;">
+            <li class="page-item">
+                <a class="page-link"><i class="bi bi-arrow-left"></i>Previous</a>
+            </li>
+            <li class="page-item "><a class="page-link" href="#">1</a></li>
+            <li class="page-item active" aria-current="page">
+                <a class="page-link" href="#">2</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#"><i class="bi bi-three-dots"></i></a></li>
+            <li class="page-item"><a class="page-link" href="#">17</a></li>
+            <li class="page-item"><a class="page-link" href="#">18</a></li>
+            <li class="page-item"><a class="page-link" href="#">19</a></li>
+            <li class="page-item"><a class="page-link" href="#">20</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#" style="border-right: none;">Next<i class="bi bi-arrow-right"></i></a>
+            </li>
+        </ul>
+    </nav>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
